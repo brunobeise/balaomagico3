@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'The Bigger';
+    src: url('./assets/The\ Bigger\ The\ Better.ttf') format('truetype');
+  }
+   
+  h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(16, 16, 58);
+    font-size: clamp(10px, 5px + 3vw, 300px)
+  }
+
+  
+
+  h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 5%;
+    font-size: 180%;
+  }
+
+  h3 {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin: 5%;
+   color: white;
+   font-size: 120%;
+    margin-top: 1%;
+  }
+
+
+body {
+    margin: auto;
+    height: auto;
+    padding: 0px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+nav {
+    font-family: 'The Bigger';
+    font-size: clamp(10px, 10px + 1vw, 100px);
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.linksnav{
+    text-decoration: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    margin: 5px;
+}
+
+.linksnav:hover {
+  color: rgb(255, 208, 0);
+}
+
+
+header {
+    background-color: rgb(0, 85, 255);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.background {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: -4px;
+}
+
+
+.containerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: inherit;
+}
+.box {
+    text-align: center;
+    width: 450px;
+    min-height: 450px;
+    margin-right: 2%;
+    margin-left: 2%;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    margin-bottom: 5%;
+    margin-top: -2%;
+    border-radius: 10%;
+}
+
+.box1 {
+    background-color: rgb(140, 57, 209);
+}
+
+.box2 {
+    background-color: rgb(219, 87, 0);
+}
+
+.box3 {
+    background-color: #b92e1c;
+}
+
+.boximg {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.trescoisas {
+    text-align: center;
+    min-height: 11px;
+    margin-bottom: 50px;
+}
+
+.boxnuvem {
+        text-align: center;
+        width: 30%;
+        min-width: 30px;
+         height: 100%;
+         min-height: 120px;
+}
+.nuvem {
+    height: 30%;
+}
+
+.containernuvem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+} 
+
+.slide {
+    font-size: 80%;
+    padding: 13px 30px 13px;
+    outline: 0;
+    border: 3px solid rgb(8, 8, 54);
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(8, 8, 48);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   min-width: 300px;
+   min-height: 100px;
+  }
+  
+  .slide i {
+    opacity: 0;
+    font-size: 13px;
+    transition: 0.2s;
+    position: absolute;
+    right: 10px;
+    top: 21px;
+    transition: transform 1;
+  }
+  
+  .slide div {
+    transition: transform 0.8s;
+  }
+  
+  .slide:hover div {
+    transform: translateX(-6px);
+  }
+  
+  .slide::after {
+    content: "";
+    background-color: rgb(255, 208, 0);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+  
+  .slide:hover i {
+    opacity: 1;
+    transform: translateX(-6px);
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(0, 85, 255);
+    display: flex;
+    height: 120px;
+    width: 100%;
+  }
+
+  .icons {
+    width: 5%;
+    min-width: 40px;
+    margin: 2%;
+    filter: invert(1);
+    transition: all 300ms ease-out;
+  }
+
+  .icons:hover {
+    transform: scale(1.1);
+  }
+
+  .buttonbox {
+  width: 250px;
+	height: 50px;
+	border: 0;
+	position: relative;
+	border-radius: 5px;
+	color: #fff;
+	font-family: "The Bigger";
+  font-size: 150%;
+	background: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+  transition: all 200ms ease;
+  }
+
+  .buttonbox:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 1px -10px rgba(0,0,0,0.30);
+  }
+
+  .gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+.gallery-items{
+    width: 340px;
+    height: 340px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s ease-out;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:hover{
+    transform: scale(1.2);
+}
